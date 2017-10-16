@@ -8,8 +8,15 @@ parks = arcpy.GetParameterAsText(3)
 interstates = arcpy.GetParameterAsText(4)
 transit = arcpy.GetParameterAsText(5)
 outFC = arcpy.GetParameterAsText(6)
+airDist = arcpy.GetParameterAsText(7)
+golfDist = arcpy.GetParameterAsText(8)
+parkDist = arcpy.GetParameterAsText(9)
+interDist = arcpy.GetParameterAsText(10)
+transDist = arcpy.GetParameterAsText(11)
 env.workspace = r'C:\Data\MidTermProjectAll220MB(1)\MidTermProjectAll220MB\MyProject2.gdb'
 env.overwriteOutput = True
+
+
 
 fcToDelete = ["AirportBuffer", "AirportCT", "GolfBuff", "GolfCT", "GolfClip",
               "GoodParks", "ParksBuff", "ParksClip", "ParksCT", "InterBuff",
